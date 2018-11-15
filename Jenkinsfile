@@ -66,7 +66,7 @@ podTemplate(label: label,
               sh """
                 helm upgrade --install first-app \
                   --namespace production \
-                  --set image.repository=10.108.192.154/first-app \
+                  --set image.repository=sdfacre/first-app \
                   --set image.tag=${VERSION}.${COMMIT} \
                   --set ingress.enabled=true \
                   --set ingress.hosts[0]=first-app.192.168.99.100.nip.io \
